@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+h1,h2{
+  color: black;
+  font-weight: 500;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333e5a;
+  background-color:#66e3ce;
+  min-height: 100%;
+}
+
+header{
+  background: #333e5a;
+  color: #fff;
+  text-align: center;
+  flex-grow: 0;
+  margin-bottom: 2em;
+}
+
+header > h1,a{
+  padding: 0.4em 0;
+  color:white;
+  text-decoration: none;
+}
+
+.head{
+  text-align: center;
+  margin-right:30px;
+}
+
+.chats{
+  height:65vh;
+  width:80vh;
+  margin:auto;
+  overflow-x: hidden; 
+  overflow-y: auto;
+  transform: rotate(180deg);
+  direction:rtl;
+}
+
+.message-left, .message-right{
+  transform: rotate(180deg);
+  font-size: small;
+}
+
+.send-message{
+  display: flex;
+  width:40%;
+  margin:15px auto;
+  margin-bottom: 65px;
+}
+
+.send-message > input {
+  max-width:65vh;
+  height:auto;
+}
+
+.message-left{
+  text-align: left;
+}
+
+.message-left > .message{
+  width:fit-content;
+	text-align: right;
+  color:white;
+  background-color:#4870df;
+  border-radius:10px;
+  margin:0 auto 15px 20px;
+  padding:10px;
+  font-weight: bold;
+  font-size:medium;
+}
+
+.message-left > .sender{
+  display:none;
+  width:fit-content;
+	text-align: right;
+  color:black;
+  margin:15px auto 0 25px;
+  font-size: small;
+  font-weight: normal;
+}
+
+.message-right{
+  text-align: right;
+}
+
+.message-right > .message{
+  width:fit-content;
+	text-align: left;
+  color:black;
+  background-color: #fafafa;
+  border-radius:10px;
+  margin:15px 20px 15px auto;
+  padding:10px 5px;
+  font-weight: bold;
+  font-size:medium;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #333e5a;
+  max-width: 300px;
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form > div {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+form > div > label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+form > div > input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #333e5a;
+}
+
+button {
+  background: #333e5a;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 0;
+  margin:5px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+footer {
+  width:100%;
+  background: #333e5a;
+  color: #fff;
+  text-align: center;
+  flex-grow: 0;
+  padding: 1em 0;
+  bottom:0;
+  position:fixed;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
